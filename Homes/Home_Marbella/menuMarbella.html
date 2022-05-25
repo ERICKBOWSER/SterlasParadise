@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styleMarbella.css">
+    <title>Menu</title>
+</head>
+   
+<body>
+    <div class="cabecera">
+        <div class="imagen_logo">
+            <!-- modifique los valores aquí presentes para ajustar el logo al centro  QUITAR CARTA Y DESCARGA-->
+            <a href="index.html"><img src="resources/logo_marbella.png" height="65%" width="20%" /></a>
+             
+        </div>
+         <ul id="menu">
+            <!-- recuerda que están en espejo -->
+            <li><a href="reserva.php">Reserva</a></li>
+            <li><a href="index.html">Home</a></li>
+        </ul>
+    </div>
+    
+    <div id="cabecera">
+        <!-- Declaracion audios por ID -->
+       
+         <audio id="audiocarta"> <!-- Declaracion Audio Carta -->
+             <source src="assets/sonidos/pagina.mp3" type="audio/mpeg">
+         </audio>
+ 
+         <audio id="audioshisha"> <!-- Declaracion audio Vino -->
+             <source src="assets/sonidos/shisha.mp3" type="audio/mpeg">
+         </audio>
+
+         <audio id="audiovino"> <!-- Declaracion audio Vino -->
+            <source src="assets/sonidos/vino.mp3" type="audio/mpeg">
+        </audio>
+ 
+         <!-- Declaracion Enlaces -->
+         <a href="resources/menujardinmarbella.pdf" target="_blank" onclick="playCarta()">
+             <div id="cartacomida"><p>Carta general</p></div>
+         </a>
+ 
+         <a href="resources/carta vinos marbella.pdf" target="_blank" onclick="playVino()">
+             <div id="cartavino"><p>Vinos</p></div>
+         </a>
+         
+         <a href="resources/shishasMarbella.pdf" target="_blank" onclick="playShisha()">
+            <div id="cartashisha"><p>Shishas</p></div>
+        </a>
+         <!-- target="_blank" para abrir pdf en una nueva ventana y onclick="llamada a la funcion reproducir" para ejecutar el sonido al hacer click-->
+ 
+         <script>
+             // Asignacion variables a audios declarados por IDS mas arriba
+             var x = document.getElementById("audiocarta");
+             var z = document.getElementById("audiovino");
+             var y = document.getElementById("audioshisha");
+             // Creacion Funciones para reproducir sonidos
+             function playCarta() {
+                 x.play(); //reproduce la variable con el sonido
+             }
+             function playVino(){
+                 z.play() //reproduce la variable con el sonido
+             }
+
+             function playShisha(){
+                 y.play() //reproduce la variable con el sonido
+             }
+ 
+         </script>
+     </div>
+
+    
+    <div class="pie">
+    
+        <div class="horario">
+            <div class="titulo">Horario</div>
+            <ul>
+                <li>Lunes a Viernes</li>
+                <li>Sábados</li>
+                <li>Domingos</li>
+            </ul>
+        </div>
+    
+        <div class="contacto">
+            <div class="titulo">Contacto</div>
+            <ul>
+                <li>Teléfono</li>
+                <li>Correo Eléctronico</li>
+            </ul>
+        </div>
+    
+        <div>
+            &copy;
+        </div>
+    
+    </div>
+    </body>
+</html>
