@@ -40,7 +40,7 @@
             ?>
             
         </h1>
-        <form method='GET' action="">
+        <form method='GET' action="../../acciones/cancelarReserva.php">
             
             <div class="comprobarReserva"> 
                 <div class="divReserva">
@@ -156,7 +156,7 @@
                                 while($cliente = mysqli_fetch_assoc($reserva)):
                                     if($cliente['tlfcli'] == $telefono):
                         ?>
-                                        <input type="text" name="telefono" id="telefono" class="reservaDatos" value="<?=$cliente['tlfcli']?>" disabled="disabled"/><br/>
+                                        <input type="text" name="telefono" id="telefono" class="reservaDatos" value="<?=$cliente['tlfcli']?>"/><br/>
                         <?php
                                     endif;
                                 endwhile;
@@ -171,7 +171,7 @@
                                 while($cliente = mysqli_fetch_assoc($reserva)):
                                     if($cliente['tlfcli'] == $telefono):
                         ?>
-                                        <input type="text" name="email" id="email" class="reservaDatos" value="<?=$cliente['emailcli']?>" disabled="disabled"/><br/>
+                                        <input type="text" name="email" id="email" class="reservaDatos" value="<?=$cliente['emailcli']?>"/><br/>
                         <?php
                                     endif;
                                 endwhile;
@@ -181,6 +181,7 @@
                     
                 <div class="comprobarReserva">
                         <a href="index.html" class="a-reserva" id="boton-inicio">Volver al inicio</a>
+                        <input type="submit" name="enviar" value="Cancelar reserva" class="a-reserva" id="boton-inicio"/>
                 </div>
         </form>
     </body>
