@@ -124,6 +124,7 @@ http://www.templatemo.com/tm-507-victory
                             <option value="14:00">14:00</option>
                             <option value="14:30">14:30</option>
                             <option value="15:00">15:00</option>
+                            <option value="15:00">15:30</option>
                         </optgroup>
                     
                         <optgroup label="Cenas">

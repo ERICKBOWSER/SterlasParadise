@@ -89,7 +89,7 @@
         </p>
         <section id="reserva" class="reserva">
             <form action="../../acciones/guardar_reserva.php" method="GET" role="form">
-            <input type="hidden" name="restaurante" value="3"/>
+            <input type="hidden" name="restaurante" value="1"/>
             <div class="row">
               <div class="col-md-6 form-group">
                 <select class="form-control" name="zonas">
@@ -120,8 +120,6 @@
               <div class="col-md-8 form-group mt-3 mt-md-0">
                 <select class="form-control" name="hora">
                   <option class="form-control" name="hora" id="#">Hora</option>
-                  <option class="form-control" name="hora" id="12" value="12:00">12:00</option>
-                  <option class="form-control" name="hora" id="1230" value="12:30">12:30</option>
                   <option class="form-control" name="hora" id="13" value="13:00">13:00</option>
                   <option class="form-control" name="hora" id="1330" value="13:30">13:30</option>
                   <option class="form-control" name="hora" id="14" value="14:00">14:00</option>

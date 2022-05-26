@@ -2,8 +2,7 @@
 
 if(!empty($_GET)){
     require_once '../inclusiones/conexion.php';
-
-    
+   
     /* LECCIÓN DE HOY
         Si no estableces el tipo se guarda como boolean, no nos habia pasado porque al hacer la validación ya colocabamos que el envio tenía que ser de tipo string
     */
@@ -30,7 +29,6 @@ if(!empty($_GET)){
     $guardarDatos = mysqli_query($db, $sql);
     
     $restauranteAux = $restaurante;
-    
     
     function getReserva($db){
         $sql = "SELECT * FROM reservas ORDER BY codreserva DESC LIMIT 1";

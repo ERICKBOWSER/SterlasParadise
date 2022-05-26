@@ -7,12 +7,9 @@
     $telefono = isset($_GET['telefono']) ? mysqli_real_escape_string($db, $_GET['telefono']) : false;    
     
     $reservaRealizada = getReservaCliente($db, $telefono);
-    
-    while($reserva = mysqli_fetch_assoc($reservaRealizada)):
-       // var_dump($reserva['tlfcli']);
-       // var_dump($telefono);
-        if(
-                $reserva['tlfcli'] == $telefono):
+
+    $reserva = mysqli_fetch_assoc($reservaRealizada);
+        if($reserva['tlfcli'] == $telefono):
 ?>
 <html>
     <head>
@@ -190,9 +187,7 @@
 </html>
 <?php
         //elseif($reserva['tlfcli'] != $telefono): header("Location:Index.html");
-        else: header("Refresh: 0; URL=Index.html");
+        else: header("Location: ../../acciones/sinReserva.php");
         endif;
-    endwhile;
-    
 ?>
 
