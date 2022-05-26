@@ -19,7 +19,7 @@
             <h1 class="h1-sinReserva">Su reserva ha sido cancelada...</h1>
         </div>
         <?php
-            header("Refresh: 8; URL=../Homes/Home/Index.html");
+            header("Refresh: 2.5; URL=../Homes/Home/Index.html");
         ?>
     </body>
 </html>

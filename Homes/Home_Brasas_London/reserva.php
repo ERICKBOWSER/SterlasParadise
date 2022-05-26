@@ -63,7 +63,7 @@
                 garantizar su asistencia.
             </p>
             <section id="reserva" class="reserva">
-                <form action="../../acciones/guardar_reserva.php" method="GET">
+                <form action="../../acciones/guardar_reserva.php" method="POST">
                     <input type="hidden" name="restaurante" value="4"/>
                     <input type="hidden" name="zonas" value="1"/>
                     <div class="row">

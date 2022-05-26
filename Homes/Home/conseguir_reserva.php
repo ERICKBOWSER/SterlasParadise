@@ -4,7 +4,7 @@
     require_once '../../acciones/conseguir_zonas.php';
     
     // Guardar datos de la url 
-    $telefono = isset($_GET['telefono']) ? mysqli_real_escape_string($db, $_GET['telefono']) : false;    
+    $telefono = isset($_POST['telefono']) ? mysqli_real_escape_string($db, $_POST['telefono']) : false;    
     
     $reservaRealizada = getReservaCliente($db, $telefono);
 
@@ -40,7 +40,7 @@
             ?>
             
         </h1>
-        <form method='GET' action="../../acciones/cancelarReserva.php">
+        <form method='POST' action="../../acciones/cancelarReserva.php">
             
             <div class="comprobarReserva"> 
                 <div class="divReserva">

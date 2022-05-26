@@ -83,7 +83,7 @@ http://www.templatemo.com/tm-507-victory
         <div class="container" id="divEspacio">
          
           <section id="reserva" class="reserva">
-            <form action="../../acciones/guardar_reserva.php" method="GET" role="form">
+            <form action="../../acciones/guardar_reserva.php" method="POST" role="form">
               <input type="hidden" name="restaurante" value="2"/>
               <div class="row">
                 <div class="col-md-6 form-group">

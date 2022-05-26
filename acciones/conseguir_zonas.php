@@ -1,6 +1,6 @@
 <?php
 
-if(!empty($_GET)){
+if(!empty($_POST)){
 
     
 
