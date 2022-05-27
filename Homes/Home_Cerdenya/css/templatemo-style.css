@@ -664,13 +664,22 @@ section.page-heading a div {
 	height:300px;
 }
 
-section.page-heading #cartacomida{
-	background-image: url(../img/almejas.jpg);
+section.page-heading a #cartacomida{
+	background-image: url(../img/cook_01.jpg ); 
+	background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position:relative;
 }
 
-section.page-heading #cartavino{
-	background-image: url(../img/cook_dinner.png);
-	margin-left: 50px;
+section.page-heading a #cartavino{
+	background-image: url(../img/vino.jpg);
+	background-repeat: no-repeat;
+    background-size: cover;
+    margin-left:30px;
+    background-position: center center;
+  
+	
 }
 
 .page-heading h1 {
