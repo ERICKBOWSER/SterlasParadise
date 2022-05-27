@@ -29,7 +29,7 @@ if(!empty($_POST)){
     $guardarDatos = mysqli_query($db, $sql);
     
     $restauranteAux = $restaurante;
-    
+
     function getReserva($db){
         $sql = "SELECT * FROM reservas ORDER BY codreserva DESC LIMIT 1";
         $reservaCliente = mysqli_query($db, $sql);
@@ -54,6 +54,7 @@ if(!empty($_POST)){
         ){
             require_once 'reservaRealizada.html';
             echo "<h1 class='reservaGuardada comprobarReserva'>Su reserva se ha realizado correctamente Sr/Sra " . $reserva['nomcli'] . " " . $reserva['apecli'] . "</h1><br/>";
+            
             
             
             header("Refresh: 5; URL= ../Homes/Home/index.html");

@@ -54,19 +54,19 @@
                                     <?php
                                     if($cliente['codrest'] == 1):
                                     ?>
-                                        <input type="text" name="zonas" id="zonas" class="reservaDatos" value="Hawai" disabled="disabled"/>
+                                        <input type="text" name="zonas" id="zonas" class="reservaDatos" value="Hawai" />
                                     <?php
                                     elseif ($cliente['codrest'] == 2):
                                     ?>
-                                        <input type="text" name="zonas" id="zonas" class="reservaDatos" value="Cerdeña" disabled="disabled"/>
+                                        <input type="text" name="zonas" id="zonas" class="reservaDatos" value="Cerdeña" />
                                     <?php
                                     elseif ($cliente['codrest'] == 3):
                                     ?>
-                                        <input type="text" name="zonas" id="zonas" class="reservaDatos" value="Marbella" disabled="disabled"/>
+                                        <input type="text" name="zonas" id="zonas" class="reservaDatos" value="Marbella" />
                                     <?php
                                     elseif ($cliente['codrest'] == 4):
                                     ?>
-                                        <input type="text" name="zonas" id="zonas" class="reservaDatos" value="London" disabled="disabled"/>
+                                        <input type="text" name="zonas" id="zonas" class="reservaDatos" value="London" />
                                     <?php
                                         endif;
                                     ?>
@@ -87,11 +87,11 @@
                                     <?php
                                     if($cliente['codzona'] == 1):
                                     ?>
-                                        <input type="text" name="zonas" id="zonas" class="reservaDatos" value="Interior" disabled="disabled"/>
+                                        <input type="text" name="zonas" id="zonas" class="reservaDatos" value="Interior"/>
                                     <?php
                                     elseif ($cliente['codzona'] == 2):
                                     ?>
-                                        <input type="text" name="zonas" id="zonas" class="reservaDatos" value="Exterior" disabled="disabled"/>
+                                        <input type="text" name="zonas" id="zonas" class="reservaDatos" value="Exterior" />
                                     <?php
                                         endif;
                                     ?>
@@ -109,7 +109,7 @@
                             while($cliente = mysqli_fetch_assoc($reserva)):
                                 if($cliente['tlfcli'] == $telefono):
                     ?>
-                                    <input  type="text" name="fecha" id="fecha" class="reservaDatos" value="<?=$cliente['fecres']?>" disabled="disabled"/>
+                                    <input  type="text" name="fecha" id="fecha" class="reservaDatos" value="<?=$cliente['fecres']?>" />
                     <?php
                                 endif;
                             endwhile;
@@ -124,7 +124,7 @@
                             while($cliente = mysqli_fetch_assoc($reserva)):
                                 if($cliente['tlfcli'] == $telefono):
                     ?>        
-                                    <input type="text" name="hora" id="hora" class="reservaDatos" value="<?=$cliente['horares']?>" disabled="disabled"/>
+                                    <input type="text" name="hora" id="hora" class="reservaDatos" value="<?=$cliente['horares']?>"/>
                     <?php
                                 endif;
                             endwhile;
@@ -139,7 +139,7 @@
                         while($cliente = mysqli_fetch_assoc($reserva)):
                             if($cliente['tlfcli'] == $telefono):
                 ?>
-                                <input type="text" name="numpersonas" id="numpersonas" class="reservaDatos" value="<?=$cliente['numper']?>" disabled="disabled"/>
+                                <input type="text" name="numpersonas" id="numpersonas" class="reservaDatos" value="<?=$cliente['numper']?>"/>
                 <?php
                             endif;
                         endwhile;
